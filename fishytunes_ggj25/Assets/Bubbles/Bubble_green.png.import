@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://broa6i60dfxgy"
-path="res://.godot/imported/artflow_202501251400.png-e7e8dfb48b2b9c819343b7095c7dab9d.ctex"
+uid="uid://cehnmymkc0srl"
+path="res://.godot/imported/Bubble_green.png-9449910d66393444a7fa39898ed50a28.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://artflow_202501251400.png"
-dest_files=["res://.godot/imported/artflow_202501251400.png-e7e8dfb48b2b9c819343b7095c7dab9d.ctex"]
+source_file="res://Assets/Bubbles/Bubble_green.png"
+dest_files=["res://.godot/imported/Bubble_green.png-9449910d66393444a7fa39898ed50a28.ctex"]
 
 [params]
 

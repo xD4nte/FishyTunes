@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://dnqot4kdaxiiw"]
 
 [ext_resource type="Script" path="res://Assets/Bubble.gd" id="1_e1qrj"]
-[ext_resource type="Texture2D" uid="uid://bo6opuknwrq8c" path="res://Bubble_pink.png" id="2_om8l3"]
-[ext_resource type="AudioStream" uid="uid://dqd1hi70wlh62" path="res://C1.mp3" id="3_12why"]
-[ext_resource type="AudioStream" uid="uid://dc62bis23aki1" path="res://garbage.mp3" id="4_eaw85"]
+[ext_resource type="Texture2D" uid="uid://bo6opuknwrq8c" path="res://Assets/Bubbles/Bubble_pink.png" id="2_om8l3"]
+[ext_resource type="AudioStream" uid="uid://dqd1hi70wlh62" path="res://Assets/Sounds/C1.mp3" id="3_12why"]
+[ext_resource type="AudioStream" uid="uid://dc62bis23aki1" path="res://Assets/Sounds/garbage.mp3" id="4_eaw85"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_28bit"]
 radius = 33.3766

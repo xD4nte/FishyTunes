@@ -39,7 +39,7 @@ func load_current_level():
 func _on_level_completed():
 	is_transitioning = true
 	var level_number = int(current_level.split("_")[1])
-	if level_number >= max_level:
+	if level_number == max_level:
 		emit_signal("game_won")
 		_on_game_won()
 	else:

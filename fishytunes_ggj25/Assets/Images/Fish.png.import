@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b47tjuxlapqvi"
-path="res://.godot/imported/pngtree-soap-bubble-cartoon-png-image_13371482.png-8d09c750298f16a165357e4d4af5d9aa.ctex"
+uid="uid://broa6i60dfxgy"
+path="res://.godot/imported/Fish.png-bf9d63083d4322df3fc25b9e3e3085d4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pngtree-soap-bubble-cartoon-png-image_13371482.png"
-dest_files=["res://.godot/imported/pngtree-soap-bubble-cartoon-png-image_13371482.png-8d09c750298f16a165357e4d4af5d9aa.ctex"]
+source_file="res://Assets/Images/Fish.png"
+dest_files=["res://.godot/imported/Fish.png-bf9d63083d4322df3fc25b9e3e3085d4.ctex"]
 
 [params]
 

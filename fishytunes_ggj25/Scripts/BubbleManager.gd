@@ -3,15 +3,36 @@ extends Node2D
 @export var bubble_scene: PackedScene = preload("res://Assets/Bubbles.tscn")
 
 const BUBBLE_COLORS = {
-	"pink": preload("res://Bubble_pink.png"),
-	"blue": preload("res://Bubble_blue.png"),
-	"green": preload("res://Bubble_green.png"),
-	"yellow": preload("res://Bubble_yellow.png")
+	"pink": preload("res://Assets/Bubbles/Bubble_pink.png"),
+	"blue": preload("res://Assets/Bubbles/Bubble_blue.png"),
+	"green": preload("res://Assets/Bubbles/Bubble_green.png"),
+	"yellow": preload("res://Assets/Bubbles/Bubble_yellow.png"),
+	"darkblue": preload("res://Assets/Bubbles/Bubble_darkblue.png"),
+	"darkgreen": preload("res://Assets/Bubbles/Bubble_darkgreen.png"),
+	"darkyellow": preload("res://Assets/Bubbles/Bubble_darkyellow.png"),
+	"lightred": preload("res://Assets/Bubbles/Bubble_lightred.png"),
+	"orange": preload("res://Assets/Bubbles/Bubble_orange.png"),
+	"pearl": preload("res://Assets/Bubbles/Bubble_pearl.png"),
+	"purple": preload("res://Assets/Bubbles/Bubble_purple.png"),
+	"red": preload("res://Assets/Bubbles/Bubble_red.png"),
+	"violet": preload("res://Assets/Bubbles/Bubble_violet.png")
 }
 
 const NOTES = {
-	"default": preload("res://C1.mp3"),
-	"trash": preload("res://garbage.mp3")
+	"trash": preload("res://Assets/Sounds/garbage.mp3"),
+	"C1": preload("res://Assets/Sounds/C1.mp3"),
+	"C#1": preload("res://Assets/Sounds/C#1.mp3"),
+	"D1": preload("res://Assets/Sounds/D1.mp3"),
+	"D#1": preload("res://Assets/Sounds/D#1.mp3"),
+	"E1": preload("res://Assets/Sounds/E1.mp3"),
+	"F1": preload("res://Assets/Sounds/F1.mp3"),
+	"F#1": preload("res://Assets/Sounds/F#1.mp3"),
+	"G1": preload("res://Assets/Sounds/G1.mp3"),
+	"G#1": preload("res://Assets/Sounds/G#1.mp3"),
+	"A1": preload("res://Assets/Sounds/A1.mp3"),
+	"A#1": preload("res://Assets/Sounds/A#1.mp3"),
+	"H1": preload("res://Assets/Sounds/H1.mp3"),
+	"C2": preload("res://Assets/Sounds/C2.mp3")
 }
 
 signal level_completed
@@ -21,33 +42,33 @@ var level_patterns = {
 		"columns": [
 			{
 				"bubbles": [
-					{"color": "pink", "note": "default", "correct": false, "scale": 2.2},
-					{"color": "blue", "note": "default", "correct": true, "scale": 2.0},
-					{"color": "green", "note": "default", "correct": false, "scale": 2.3},
-					{"color": "yellow", "note": "default", "correct": false, "scale": 2.1},
-					{"color": "pink", "note": "default", "correct": false, "scale": 2.2}
+					{"color": "pink", "note": "trash", "correct": false, "scale": 2.2},
+					{"color": "blue", "note": "trash", "correct": false, "scale": 2.0},
+					{"color": "green", "note": "trash", "correct": false, "scale": 2.3},
+					{"color": "yellow", "note": "A1", "correct": true, "scale": 2.1},
+					{"color": "pink", "note": "trash", "correct": false, "scale": 2.2}
 				],
 				"x_position": 334,
 				"spacing": 200
 			},
 			{
 				"bubbles": [
-					{"color": "blue", "note": "default", "correct": false, "scale": 2.0},
-					{"color": "green", "note": "default", "correct": false, "scale": 2.3},
-					{"color": "pink", "note": "default", "correct": true, "scale": 2.2},
-					{"color": "yellow", "note": "default", "correct": false, "scale": 2.1},
-					{"color": "blue", "note": "default", "correct": false, "scale": 2.0}
+					{"color": "darkblue", "note": "trash", "correct": false, "scale": 2.0},
+					{"color": "darkgreen", "note": "trash", "correct": false, "scale": 2.3},
+					{"color": "lightred", "note": "E1", "correct": true, "scale": 2.2},
+					{"color": "darkyellow", "note": "trash", "correct": false, "scale": 2.1},
+					{"color": "purple", "note": "trash", "correct": false, "scale": 2.0}
 				],
 				"x_position": 752,
 				"spacing": 200
 			}, 
 			{
 				"bubbles": [
-					{"color": "blue", "note": "default", "correct": false, "scale": 2.0},
-					{"color": "green", "note": "default", "correct": false, "scale": 2.3},
-					{"color": "pink", "note": "default", "correct": false, "scale": 2.2},
-					{"color": "yellow", "note": "default", "correct": false, "scale": 2.1},
-					{"color": "blue", "note": "default", "correct": true, "scale": 2.0}
+					{"color": "blue", "note": "trash", "correct": false, "scale": 2.0},
+					{"color": "green", "note": "trash", "correct": false, "scale": 2.3},
+					{"color": "pink", "note": "trash", "correct": false, "scale": 2.2},
+					{"color": "yellow", "note": "trash", "correct": false, "scale": 2.1},
+					{"color": "blue", "note": "trash", "correct": true, "scale": 2.0}
 				],
 				"x_position": 1086,
 				"spacing": 200
@@ -58,50 +79,50 @@ var level_patterns = {
 		"columns": [
 			{
 				"bubbles": [
-					{"color": "yellow", "note": "default", "correct": false, "scale": 2.0},
-					{"color": "green", "note": "default", "correct": true, "scale": 2.3},
-					{"color": "blue", "note": "default", "correct": false, "scale": 2.0},
-					{"color": "pink", "note": "default", "correct": false, "scale": 2.2}
+					{"color": "yellow", "note": "trash", "correct": false, "scale": 2.0},
+					{"color": "green", "note": "trash", "correct": true, "scale": 2.3},
+					{"color": "blue", "note": "trash", "correct": false, "scale": 2.0},
+					{"color": "pink", "note": "trash", "correct": false, "scale": 2.2}
 				],
 				"x_position": 334,
 				"spacing": 250
 			},
 			{
 				"bubbles": [
-					{"color": "pink", "note": "default", "correct": false, "scale": 2.2},
-					{"color": "yellow", "note": "default", "correct": true, "scale": 2.0},
-					{"color": "green", "note": "default", "correct": false, "scale": 2.3},
-					{"color": "blue", "note": "default", "correct": false, "scale": 2.0}
+					{"color": "pink", "note": "trash", "correct": false, "scale": 2.2},
+					{"color": "yellow", "note": "trash", "correct": true, "scale": 2.0},
+					{"color": "green", "note": "trash", "correct": false, "scale": 2.3},
+					{"color": "blue", "note": "trash", "correct": false, "scale": 2.0}
 				],
 				"x_position": 652,
 				"spacing": 250
 			},
 			{
 				"bubbles": [
-					{"color": "blue", "note": "default", "correct": false, "scale": 2.0},
-					{"color": "pink", "note": "default", "correct": false, "scale": 2.2},
-					{"color": "yellow", "note": "default", "correct": true, "scale": 2.0},
-					{"color": "green", "note": "default", "correct": false, "scale": 2.3}
+					{"color": "blue", "note": "trash", "correct": false, "scale": 2.0},
+					{"color": "pink", "note": "trash", "correct": false, "scale": 2.2},
+					{"color": "yellow", "note": "trash", "correct": true, "scale": 2.0},
+					{"color": "green", "note": "trash", "correct": false, "scale": 2.3}
 				],
 				"x_position": 970,
 				"spacing": 250
 			},
 			{
 				"bubbles": [
-					{"color": "green", "note": "default", "correct": false, "scale": 2.3},
-					{"color": "blue", "note": "default", "correct": false, "scale": 2.0},
-					{"color": "pink", "note": "default", "correct": true, "scale": 2.2},
-					{"color": "yellow", "note": "default", "correct": false, "scale": 2.0}
+					{"color": "green", "note": "trash", "correct": false, "scale": 2.3},
+					{"color": "blue", "note": "trash", "correct": false, "scale": 2.0},
+					{"color": "pink", "note": "trash", "correct": true, "scale": 2.2},
+					{"color": "yellow", "note": "trash", "correct": false, "scale": 2.0}
 				],
 				"x_position": 1288,
 				"spacing": 250
 			},
 			{
 				"bubbles": [
-					{"color": "yellow", "note": "default", "correct": false, "scale": 2.0},
-					{"color": "green", "note": "default", "correct": true, "scale": 2.3},
-					{"color": "blue", "note": "default", "correct": false, "scale": 2.0},
-					{"color": "pink", "note": "default", "correct": false, "scale": 2.2}
+					{"color": "yellow", "note": "trash", "correct": false, "scale": 2.0},
+					{"color": "green", "note": "trash", "correct": true, "scale": 2.3},
+					{"color": "blue", "note": "trash", "correct": false, "scale": 2.0},
+					{"color": "pink", "note": "trash", "correct": false, "scale": 2.2}
 				],
 				"x_position": 1606,
 				"spacing": 250

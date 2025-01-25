@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dff11raxvey18"]
 
 [ext_resource type="Script" path="res://Scenes/GameOverScript.gd" id="1_uv1be"]
-[ext_resource type="AudioStream" uid="uid://cijekv36blsva" path="res://Titlemusik.mp3" id="2_chiq1"]
+[ext_resource type="AudioStream" uid="uid://cijekv36blsva" path="res://Assets/Sounds/Titlemusik.mp3" id="2_chiq1"]
 
 [sub_resource type="FontVariation" id="FontVariation_jkfn4"]
 

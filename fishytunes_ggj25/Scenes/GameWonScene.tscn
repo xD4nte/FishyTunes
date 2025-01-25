@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://dde82djbaadb0"]
 
-[ext_resource type="AudioStream" uid="uid://cijekv36blsva" path="res://Titlemusik.mp3" id="1_5dgh8"]
+[ext_resource type="AudioStream" uid="uid://cijekv36blsva" path="res://Assets/Sounds/Titlemusik.mp3" id="1_5dgh8"]
 [ext_resource type="Script" path="res://Scenes/GameWonScript.gd" id="1_5v2a0"]
 
 [sub_resource type="FontVariation" id="FontVariation_vcfe8"]
