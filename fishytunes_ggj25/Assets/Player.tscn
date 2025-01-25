@@ -7,8 +7,9 @@
 radius = 44.0
 height = 88.0
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("player_body")]
 script = ExtResource("1_iyf4y")
+player_body = NodePath(".")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
 visible = false
