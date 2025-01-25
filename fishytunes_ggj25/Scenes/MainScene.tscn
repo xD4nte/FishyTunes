@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bdjxiqbu3dlx4" path="res://Assets/Player.tscn" id="1_r7xm3"]
 [ext_resource type="PackedScene" uid="uid://dnqot4kdaxiiw" path="res://Assets/Bubbles.tscn" id="2_hhyim"]
-[ext_resource type="AudioStream" uid="uid://cijekv36blsva" path="res://Titlemusik.mp3" id="3_wlcpw"]
+[ext_resource type="AudioStream" uid="uid://yic3y65beqcw" path="res://Hintergrundmusik.mp3" id="3_bx6iq"]
 
 [sub_resource type="Gradient" id="Gradient_xldii"]
 colors = PackedColorArray(0.109804, 0.701961, 0.854902, 1, 0.776471, 1, 1, 1)
@@ -20,7 +20,7 @@ scale = Vector2(4.34771, 1959.19)
 texture = SubResource("GradientTexture1D_n0yc4")
 
 [node name="Player" parent="." node_paths=PackedStringArray("player_body") instance=ExtResource("1_r7xm3")]
-position = Vector2(15, 540)
+position = Vector2(15.0001, 540)
 scale = Vector2(1.5, 1.5)
 player_body = NodePath(".")
 
@@ -121,6 +121,6 @@ scale = Vector2(2.5, 2.5)
 size = 1
 
 [node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("3_wlcpw")
+stream = ExtResource("3_bx6iq")
 volume_db = 10.0
 autoplay = true

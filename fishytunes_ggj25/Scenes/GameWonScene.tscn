@@ -1,18 +1,21 @@
-[gd_scene load_steps=6 format=3 uid="uid://dff11raxvey18"]
+[gd_scene load_steps=7 format=3 uid="uid://dde82djbaadb0"]
 
-[ext_resource type="Script" path="res://Scenes/GameOverScript.gd" id="1_uv1be"]
-[ext_resource type="AudioStream" uid="uid://cijekv36blsva" path="res://Titlemusik.mp3" id="2_chiq1"]
+[ext_resource type="AudioStream" uid="uid://cijekv36blsva" path="res://Titlemusik.mp3" id="1_5dgh8"]
+[ext_resource type="Script" path="res://Scenes/GameWonScript.gd" id="1_5v2a0"]
 
-[sub_resource type="FontVariation" id="FontVariation_jkfn4"]
+[sub_resource type="FontVariation" id="FontVariation_vcfe8"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_1jwyy"]
-font = SubResource("FontVariation_jkfn4")
+[sub_resource type="LabelSettings" id="LabelSettings_mlc00"]
+font = SubResource("FontVariation_vcfe8")
 font_size = 46
 
-[sub_resource type="LabelSettings" id="LabelSettings_jrnss"]
+[sub_resource type="FontVariation" id="FontVariation_o7mb1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_0dus4"]
+font = SubResource("FontVariation_o7mb1")
 font_size = 20
 
-[node name="GameOverScene" type="Control"]
+[node name="GameWonScene" type="Control"]
 z_index = 10
 layout_mode = 3
 anchors_preset = 15
@@ -20,11 +23,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_uv1be")
+script = ExtResource("1_5v2a0")
 
 [node name="TitleMusic" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("2_chiq1")
-autoplay = true
+stream = ExtResource("1_5dgh8")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
@@ -39,8 +41,8 @@ offset_left = 120.0
 offset_top = 50.0
 offset_right = 384.0
 offset_bottom = 114.0
-text = "Game Over"
-label_settings = SubResource("LabelSettings_1jwyy")
+text = "You won!"
+label_settings = SubResource("LabelSettings_mlc00")
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
@@ -49,11 +51,11 @@ uppercase = true
 layout_mode = 0
 offset_left = 120.0
 offset_top = 135.0
-offset_right = 384.0
+offset_right = 396.0
 offset_bottom = 199.0
-text = "Restart the game
-to try again"
-label_settings = SubResource("LabelSettings_jrnss")
+text = "You found your way through 
+the right bubbles!"
+label_settings = SubResource("LabelSettings_0dus4")
 horizontal_alignment = 1
 vertical_alignment = 1
 

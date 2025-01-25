@@ -14,6 +14,7 @@ func _process(delta):
 	var input = Input.get_vector("move_left", "move_right", "move_up", "move_down").normalized()
 	player_body.velocity = input * move_speed
 	player_body.move_and_slide()
+	success()
 	
 	position.x = clampf(position.x, 0, edge_of_screen.x)
 	position.y = clampf(position.y, 0, edge_of_screen.y)
@@ -27,3 +28,9 @@ func die():
 func start():
 	show()
 	set_process(true)
+
+func success():
+	if(position.x >= 1900):
+		set_process(false)
+		hide()
+		GameManager.game_won()

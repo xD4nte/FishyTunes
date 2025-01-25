@@ -9,8 +9,7 @@ var starting_position : Vector2
 func _on_body_entered(player: Fish) -> void:
 	if(correct == true):
 		note.play()
-		queue_free()
+		hide()
 	else:
 		trash.play()
-		player.queue_free()
 		player.die()
