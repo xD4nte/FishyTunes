@@ -29,10 +29,9 @@ script = ExtResource("4_xm3pq")
 
 [node name="PlayerLayer" type="CanvasLayer" parent="."]
 
-[node name="Player" parent="PlayerLayer" node_paths=PackedStringArray("player_body") instance=ExtResource("1_r7xm3")]
+[node name="Player" parent="PlayerLayer" instance=ExtResource("1_r7xm3")]
 position = Vector2(15.0001, 540)
 scale = Vector2(1.5, 1.5)
-player_body = NodePath(".")
 
 [node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_bx6iq")

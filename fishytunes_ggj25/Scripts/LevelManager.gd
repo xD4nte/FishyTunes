@@ -47,4 +47,4 @@ func _on_level_completed():
 		load_current_level()
 
 func _on_game_won():
-	get_tree().change_scene_to_file("res://Scenes/GameWonScene.tscn") 
+	GameManager.game_won() 
