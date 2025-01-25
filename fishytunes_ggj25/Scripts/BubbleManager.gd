@@ -35,6 +35,17 @@ const NOTES = {
 	"C2": preload("res://Assets/Sounds/C2.mp3")
 }
 
+const COLOR_NOTE_MAP = {
+	"red": "C1",
+	"orange": "C#1",
+	"yellow": "D1",
+	"green": "D#1",
+	"blue": "E1",
+	"purple": "F1",
+	"violet": "F#1",
+	"pink": "G1"
+}
+
 signal level_completed
 
 var level_patterns = {
