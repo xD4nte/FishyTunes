@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bdjxiqbu3dlx4"]
 
 [ext_resource type="Script" path="res://Assets/PlayerMovement.gd" id="1_iyf4y"]
-[ext_resource type="Texture2D" uid="uid://bed401l0p741t" path="res://Cartoon-Fish-Under-The-Sea-vector-PNG-removebg.png" id="1_lo46p"]
+[ext_resource type="Texture2D" uid="uid://broa6i60dfxgy" path="res://artflow_202501251400.png" id="2_8jee2"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ujf2q"]
 radius = 44.0
@@ -20,6 +20,6 @@ position = Vector2(21, -2)
 shape = SubResource("CapsuleShape2D_ujf2q")
 
 [node name="temp_image" type="Sprite2D" parent="."]
-position = Vector2(9, -3)
-scale = Vector2(0.229203, 0.211894)
-texture = ExtResource("1_lo46p")
+position = Vector2(8, -2)
+scale = Vector2(0.0589126, 0.060393)
+texture = ExtResource("2_8jee2")

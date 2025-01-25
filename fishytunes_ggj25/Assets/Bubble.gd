@@ -3,13 +3,14 @@ extends Node2D
 var starting_position : Vector2
 @export var size : int
 @export var correct : bool
-@onready var asp = $AudioStreamPlayer2D
+@onready var note = $Note
+@onready var trash = $Trash
 
-func _on_body_entered(body: Fish) -> void:
+func _on_body_entered(player: Fish) -> void:
 	if(correct == true):
-		print("Sound!")
-		asp.play()
+		note.play()
 		queue_free()
 	else:
-		print("Trash!")
-		body.queue_free()
+		trash.play()
+		player.queue_free()
+		player.die()

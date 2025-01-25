@@ -1,27 +1,120 @@
-[gd_scene load_steps=3 format=3 uid="uid://fvfqlpc3ptnd"]
+[gd_scene load_steps=5 format=3 uid="uid://fvfqlpc3ptnd"]
 
 [ext_resource type="PackedScene" uid="uid://bdjxiqbu3dlx4" path="res://Assets/Player.tscn" id="1_r7xm3"]
 [ext_resource type="PackedScene" uid="uid://dnqot4kdaxiiw" path="res://Assets/Bubbles.tscn" id="2_hhyim"]
 
+[sub_resource type="Gradient" id="Gradient_xldii"]
+colors = PackedColorArray(0.109804, 0.701961, 0.854902, 1, 0.776471, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_n0yc4"]
+gradient = SubResource("Gradient_xldii")
+use_hdr = true
+
 [node name="Node2D" type="Node2D"]
 
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(959.092, 543.506)
+rotation = -1.5708
+scale = Vector2(4.34771, 1959.19)
+texture = SubResource("GradientTexture1D_n0yc4")
+
 [node name="Player" parent="." node_paths=PackedStringArray("player_body") instance=ExtResource("1_r7xm3")]
-position = Vector2(134, 186)
+position = Vector2(15, 540)
+scale = Vector2(1.5, 1.5)
 player_body = NodePath(".")
 
 [node name="Bubbles" parent="." instance=ExtResource("2_hhyim")]
-position = Vector2(320, 76)
+position = Vector2(334, 119)
+scale = Vector2(3, 3)
 size = 1
 
 [node name="Bubbles2" parent="." instance=ExtResource("2_hhyim")]
-position = Vector2(319, 197)
+position = Vector2(358, 341)
+scale = Vector2(2.2, 2.2)
 correct = true
 
 [node name="Bubbles3" parent="." instance=ExtResource("2_hhyim")]
-position = Vector2(325, 324)
+position = Vector2(328, 557)
+scale = Vector2(2.7, 2.7)
 
 [node name="Bubbles4" parent="." instance=ExtResource("2_hhyim")]
-position = Vector2(319, 449)
+position = Vector2(374, 776)
+scale = Vector2(2, 2)
 
 [node name="Bubbles5" parent="." instance=ExtResource("2_hhyim")]
-position = Vector2(322, 570)
+position = Vector2(332, 985)
+scale = Vector2(2.3, 2.3)
+
+[node name="Bubbles6" parent="." instance=ExtResource("2_hhyim")]
+position = Vector2(743, 101)
+scale = Vector2(2, 2)
+size = 1
+
+[node name="Bubbles7" parent="." instance=ExtResource("2_hhyim")]
+position = Vector2(799, 325)
+scale = Vector2(2.5, 2.5)
+size = 1
+
+[node name="Bubbles8" parent="." instance=ExtResource("2_hhyim")]
+position = Vector2(752, 547)
+scale = Vector2(1.5, 1.5)
+size = 1
+correct = true
+
+[node name="Bubbles9" parent="." instance=ExtResource("2_hhyim")]
+position = Vector2(809, 757)
+scale = Vector2(2.2, 2.2)
+size = 1
+
+[node name="Bubbles10" parent="." instance=ExtResource("2_hhyim")]
+position = Vector2(719, 973)
+scale = Vector2(2.5, 2.5)
+size = 1
+
+[node name="Bubbles11" parent="." instance=ExtResource("2_hhyim")]
+position = Vector2(1208, 115)
+scale = Vector2(3, 3)
+size = 1
+
+[node name="Bubbles12" parent="." instance=ExtResource("2_hhyim")]
+position = Vector2(1232, 337)
+scale = Vector2(2.2, 2.2)
+
+[node name="Bubbles13" parent="." instance=ExtResource("2_hhyim")]
+position = Vector2(1202, 553)
+scale = Vector2(2.7, 2.7)
+
+[node name="Bubbles14" parent="." instance=ExtResource("2_hhyim")]
+position = Vector2(1248, 772)
+scale = Vector2(2, 2)
+
+[node name="Bubbles15" parent="." instance=ExtResource("2_hhyim")]
+position = Vector2(1206, 981)
+scale = Vector2(2.3, 2.3)
+correct = true
+
+[node name="Bubbles16" parent="." instance=ExtResource("2_hhyim")]
+position = Vector2(1634, 103)
+scale = Vector2(2, 2)
+size = 1
+correct = true
+
+[node name="Bubbles17" parent="." instance=ExtResource("2_hhyim")]
+position = Vector2(1690, 327)
+scale = Vector2(2.5, 2.5)
+size = 1
+
+[node name="Bubbles18" parent="." instance=ExtResource("2_hhyim")]
+position = Vector2(1643, 549)
+scale = Vector2(1.5, 1.5)
+size = 1
+
+[node name="Bubbles19" parent="." instance=ExtResource("2_hhyim")]
+position = Vector2(1700, 759)
+scale = Vector2(2.2, 2.2)
+size = 1
+
+[node name="Bubbles20" parent="." instance=ExtResource("2_hhyim")]
+position = Vector2(1610, 975)
+scale = Vector2(2.5, 2.5)
+size = 1
