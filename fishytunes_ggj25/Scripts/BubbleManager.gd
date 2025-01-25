@@ -183,5 +183,5 @@ func highlight_correct_bubbles():
 
 func _on_bubble_completed(bubble):
 	if bubble.correct:
-		#bubble.note.play()
+		bubble.note.play()
 		bubble.hide()
