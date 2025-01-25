@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://bed401l0p741t" path="res://Cartoon-Fish-Under-The-Sea-vector-PNG-removebg.png" id="1_lo46p"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ujf2q"]
-radius = 193.0
-height = 396.0
+radius = 44.0
+height = 88.0
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_iyf4y")
@@ -16,8 +16,10 @@ visible = false
 [node name="Node2D" type="Node2D" parent="Sprite"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(56, 8)
+position = Vector2(21, -2)
 shape = SubResource("CapsuleShape2D_ujf2q")
 
 [node name="temp_image" type="Sprite2D" parent="."]
+position = Vector2(9, -3)
+scale = Vector2(0.229203, 0.211894)
 texture = ExtResource("1_lo46p")

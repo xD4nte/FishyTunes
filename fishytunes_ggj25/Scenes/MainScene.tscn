@@ -1,8 +1,27 @@
-[gd_scene load_steps=2 format=3 uid="uid://fvfqlpc3ptnd"]
+[gd_scene load_steps=3 format=3 uid="uid://fvfqlpc3ptnd"]
 
 [ext_resource type="PackedScene" uid="uid://bdjxiqbu3dlx4" path="res://Assets/Player.tscn" id="1_r7xm3"]
+[ext_resource type="PackedScene" uid="uid://dnqot4kdaxiiw" path="res://Assets/Bubbles.tscn" id="2_hhyim"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Player" parent="." instance=ExtResource("1_r7xm3")]
-position = Vector2(531, 301)
+[node name="Player" parent="." node_paths=PackedStringArray("player_body") instance=ExtResource("1_r7xm3")]
+position = Vector2(134, 186)
+player_body = NodePath(".")
+
+[node name="Bubbles" parent="." instance=ExtResource("2_hhyim")]
+position = Vector2(320, 76)
+size = 1
+
+[node name="Bubbles2" parent="." instance=ExtResource("2_hhyim")]
+position = Vector2(319, 197)
+correct = true
+
+[node name="Bubbles3" parent="." instance=ExtResource("2_hhyim")]
+position = Vector2(325, 324)
+
+[node name="Bubbles4" parent="." instance=ExtResource("2_hhyim")]
+position = Vector2(319, 449)
+
+[node name="Bubbles5" parent="." instance=ExtResource("2_hhyim")]
+position = Vector2(322, 570)

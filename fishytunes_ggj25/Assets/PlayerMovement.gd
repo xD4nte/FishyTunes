@@ -1,5 +1,4 @@
-extends Node
-var move_speed = 1000
+extends Fish
 @export var player_body : CharacterBody2D
 
 # Called when the node enters the scene tree for the first time.
