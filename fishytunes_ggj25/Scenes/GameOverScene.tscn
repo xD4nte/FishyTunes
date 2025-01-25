@@ -41,6 +41,7 @@ vertical_alignment = 1
 uppercase = true
 
 [node name="Instructions" type="Label" parent="Panel"]
+layout_mode = 0
 offset_left = 120.0
 offset_top = 135.0
 offset_right = 384.0

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bed401l0p741t"
-path="res://.godot/imported/Cartoon-Fish-Under-The-Sea-vector-PNG-removebg.png-bda4f0ec930731effef8a426324050b4.ctex"
+uid="uid://cehnmymkc0srl"
+path="res://.godot/imported/Bubble_green.png-2d75ec968e762892e37760d181c0fcec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Cartoon-Fish-Under-The-Sea-vector-PNG-removebg.png"
-dest_files=["res://.godot/imported/Cartoon-Fish-Under-The-Sea-vector-PNG-removebg.png-bda4f0ec930731effef8a426324050b4.ctex"]
+source_file="res://Bubble_green.png"
+dest_files=["res://.godot/imported/Bubble_green.png-2d75ec968e762892e37760d181c0fcec.ctex"]
 
 [params]
 

@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://fvfqlpc3ptnd"]
+[gd_scene load_steps=6 format=3 uid="uid://fvfqlpc3ptnd"]
 
 [ext_resource type="PackedScene" uid="uid://bdjxiqbu3dlx4" path="res://Assets/Player.tscn" id="1_r7xm3"]
 [ext_resource type="PackedScene" uid="uid://dnqot4kdaxiiw" path="res://Assets/Bubbles.tscn" id="2_hhyim"]
+[ext_resource type="AudioStream" uid="uid://cijekv36blsva" path="res://Titlemusik.mp3" id="3_wlcpw"]
 
 [sub_resource type="Gradient" id="Gradient_xldii"]
 colors = PackedColorArray(0.109804, 0.701961, 0.854902, 1, 0.776471, 1, 1, 1)
@@ -118,3 +119,8 @@ size = 1
 position = Vector2(1610, 975)
 scale = Vector2(2.5, 2.5)
 size = 1
+
+[node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_wlcpw")
+volume_db = 10.0
+autoplay = true

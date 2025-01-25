@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dnqot4kdaxiiw"]
 
 [ext_resource type="Script" path="res://Assets/Bubble.gd" id="1_e1qrj"]
-[ext_resource type="Texture2D" uid="uid://b47tjuxlapqvi" path="res://pngtree-soap-bubble-cartoon-png-image_13371482.png" id="1_momu0"]
+[ext_resource type="Texture2D" uid="uid://bo6opuknwrq8c" path="res://Bubble_pink.png" id="2_om8l3"]
 [ext_resource type="AudioStream" uid="uid://dqd1hi70wlh62" path="res://C1.mp3" id="3_12why"]
 [ext_resource type="AudioStream" uid="uid://dc62bis23aki1" path="res://garbage.mp3" id="4_eaw85"]
 
@@ -12,9 +12,9 @@ radius = 33.3766
 script = ExtResource("1_e1qrj")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-7.62939e-06, 0)
-scale = Vector2(0.0708333, 0.0708333)
-texture = ExtResource("1_momu0")
+position = Vector2(3, 2)
+scale = Vector2(0.0447916, 0.0447917)
+texture = ExtResource("2_om8l3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_28bit")
@@ -22,6 +22,7 @@ debug_color = Color(0.956184, 1.92523e-07, 0.539279, 0.42)
 
 [node name="Trash" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_eaw85")
+volume_db = -10.0
 
 [node name="Note" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_12why")
