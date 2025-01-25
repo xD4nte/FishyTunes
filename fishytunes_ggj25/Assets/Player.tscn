@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bdjxiqbu3dlx4"]
+
+[ext_resource type="Script" path="res://Assets/PlayerMovement.gd" id="1_iyf4y"]
+[ext_resource type="Texture2D" uid="uid://bed401l0p741t" path="res://Cartoon-Fish-Under-The-Sea-vector-PNG-removebg.png" id="1_lo46p"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ujf2q"]
+radius = 193.0
+height = 396.0
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_iyf4y")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+visible = false
+
+[node name="Node2D" type="Node2D" parent="Sprite"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(56, 8)
+shape = SubResource("CapsuleShape2D_ujf2q")
+
+[node name="temp_image" type="Sprite2D" parent="."]
+texture = ExtResource("1_lo46p")
