@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dde82djbaadb0"]
+[gd_scene load_steps=18 format=3 uid="uid://dde82djbaadb0"]
 
 [ext_resource type="AudioStream" uid="uid://cijekv36blsva" path="res://Assets/Sounds/Titlemusik.mp3" id="1_5dgh8"]
 [ext_resource type="Script" path="res://Scenes/GameWonScript.gd" id="1_5v2a0"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://d1vx3v4j0i2s3" path="res://Assets/Bubbles/Bubble_pearl.png" id="11_d1fbn"]
 [ext_resource type="Texture2D" uid="uid://dr16v0j2ju2tl" path="res://Assets/Images/Doctorfish.png" id="11_nneey"]
 [ext_resource type="Texture2D" uid="uid://broa6i60dfxgy" path="res://Assets/Images/Fish.png" id="12_gcty0"]
+[ext_resource type="Texture2D" uid="uid://cwawfkq7jw207" path="res://Assets/Images/Gerda.png" id="13_oxt3i"]
 [ext_resource type="Texture2D" uid="uid://gl32yp042yil" path="res://Assets/Bubbles/Bubble_violet.png" id="14_blxxp"]
 [ext_resource type="Texture2D" uid="uid://duxi2tkltkvan" path="res://Assets/Bubbles/Bubble_yellow.png" id="15_l8kt4"]
 
@@ -140,5 +141,12 @@ position = Vector2(1199, 627)
 rotation = 0.26529
 scale = Vector2(-0.059, 0.059)
 texture = ExtResource("12_gcty0")
+
+[node name="Gerda" type="Sprite2D" parent="."]
+z_index = 12
+position = Vector2(719, 742)
+rotation = -0.23911
+scale = Vector2(0.0746875, 0.0746875)
+texture = ExtResource("13_oxt3i")
 
 [connection signal="pressed" from="Panel/Button" to="." method="_on_button_pressed"]
