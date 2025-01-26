@@ -1,7 +1,17 @@
-[gd_scene load_steps=7 format=3 uid="uid://dde82djbaadb0"]
+[gd_scene load_steps=17 format=3 uid="uid://dde82djbaadb0"]
 
 [ext_resource type="AudioStream" uid="uid://cijekv36blsva" path="res://Assets/Sounds/Titlemusik.mp3" id="1_5dgh8"]
 [ext_resource type="Script" path="res://Scenes/GameWonScript.gd" id="1_5v2a0"]
+[ext_resource type="Texture2D" uid="uid://vmnguje1wf5i" path="res://Assets/Bubbles/Bubble_darkblue.png" id="4_0t5o5"]
+[ext_resource type="Texture2D" uid="uid://krflr4tkfq5h" path="res://Assets/Bubbles/Bubble_purple.png" id="5_e08mi"]
+[ext_resource type="Texture2D" uid="uid://bn4vafw78o4a4" path="res://Assets/Bubbles/Bubble_darkgreen.png" id="6_exp3b"]
+[ext_resource type="Texture2D" uid="uid://3jidttf2alwo" path="res://Assets/Bubbles/Bubble_darkyellow.png" id="7_ckv35"]
+[ext_resource type="Texture2D" uid="uid://c2w2bwjp51vb4" path="res://Assets/Bubbles/Bubble_lightred.png" id="9_twp05"]
+[ext_resource type="Texture2D" uid="uid://d1vx3v4j0i2s3" path="res://Assets/Bubbles/Bubble_pearl.png" id="11_d1fbn"]
+[ext_resource type="Texture2D" uid="uid://dr16v0j2ju2tl" path="res://Assets/Images/Doctorfish.png" id="11_nneey"]
+[ext_resource type="Texture2D" uid="uid://broa6i60dfxgy" path="res://Assets/Images/Fish.png" id="12_gcty0"]
+[ext_resource type="Texture2D" uid="uid://gl32yp042yil" path="res://Assets/Bubbles/Bubble_violet.png" id="14_blxxp"]
+[ext_resource type="Texture2D" uid="uid://duxi2tkltkvan" path="res://Assets/Bubbles/Bubble_yellow.png" id="15_l8kt4"]
 
 [sub_resource type="FontVariation" id="FontVariation_vcfe8"]
 
@@ -24,7 +34,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_5v2a0")
-layer = 2
 
 [node name="TitleMusic" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("1_5dgh8")
@@ -71,5 +80,65 @@ offset_top = 310.0
 offset_right = 330.0
 offset_bottom = 360.0
 text = "Restart"
+
+[node name="BubbleDarkblue" type="Sprite2D" parent="."]
+z_index = 13
+position = Vector2(776, 782)
+scale = Vector2(0.0199999, 0.0199999)
+texture = ExtResource("4_0t5o5")
+
+[node name="BubblePurple" type="Sprite2D" parent="."]
+z_index = 12
+position = Vector2(792, 758)
+scale = Vector2(0.03125, 0.03125)
+texture = ExtResource("5_e08mi")
+
+[node name="BubbleDarkgreen" type="Sprite2D" parent="."]
+z_index = 11
+position = Vector2(722, 704)
+scale = Vector2(0.02875, 0.02875)
+texture = ExtResource("6_exp3b")
+
+[node name="BubbleDarkyellow" type="Sprite2D" parent="."]
+z_index = 12
+position = Vector2(1133, 264)
+scale = Vector2(0.046875, 0.046875)
+texture = ExtResource("7_ckv35")
+
+[node name="BubbleLightred" type="Sprite2D" parent="."]
+position = Vector2(1162, 239)
+scale = Vector2(0.033125, 0.033125)
+texture = ExtResource("9_twp05")
+
+[node name="BubblePearl" type="Sprite2D" parent="."]
+z_index = 12
+position = Vector2(1227, 582)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("11_d1fbn")
+
+[node name="BubbleViolet" type="Sprite2D" parent="."]
+z_index = 12
+position = Vector2(729, 311)
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("14_blxxp")
+
+[node name="BubbleYellow" type="Sprite2D" parent="."]
+z_index = 13
+position = Vector2(1222, 354)
+scale = Vector2(0.0178125, 0.0178125)
+texture = ExtResource("15_l8kt4")
+
+[node name="Doctorfish" type="Sprite2D" parent="."]
+z_index = 11
+position = Vector2(1216, 290)
+scale = Vector2(0.0925, 0.0925)
+texture = ExtResource("11_nneey")
+
+[node name="Fish" type="Sprite2D" parent="."]
+z_index = 12
+position = Vector2(1199, 627)
+rotation = 0.26529
+scale = Vector2(-0.059, 0.059)
+texture = ExtResource("12_gcty0")
 
 [connection signal="pressed" from="Panel/Button" to="." method="_on_button_pressed"]

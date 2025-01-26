@@ -5,4 +5,4 @@ func _ready():
 		InputMap.add_action("highlight_bubbles")
 		var event = InputEventKey.new()
 		event.keycode = KEY_H
-		InputMap.action_add_event("highlight_bubbles", event) 
+		InputMap.action_add_event("highlight_bubbles", event)

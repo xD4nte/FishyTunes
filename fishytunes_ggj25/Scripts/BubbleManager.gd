@@ -53,35 +53,35 @@ var level_patterns = {
 		"columns": [
 			{
 				"bubbles": [
-					{"color": "yellow", "note": "A1", "correct": true, "scale": 2.1},
-					{"color": "darkyellow", "note": "G#1", "correct": false, "scale": 2.0},
+					{"color": "yellow", "note": "A1", "correct": true, "scale": 1.8},
+					{"color": "darkgreen", "note": "D1", "correct": false, "scale": 2.0},
 					{"color": "pink", "note": "G1", "correct": false, "scale": 2.2},
-					{"color": "pearl", "note": "F#1", "correct": false, "scale": 2.0},
-					{"color": "red", "note": "F1", "correct": false, "scale": 2.1},
-					{"color": "lightred", "note": "E1", "correct": false, "scale": 2.0}
+					{"color": "blue", "note": "F#1", "correct": false, "scale": 1.5},
+					{"color": "orange", "note": "D#1", "correct": false, "scale": 2.1},
+					{"color": "violet", "note": "C1", "correct": false, "scale": 2.4}
 				],
 				"x_position": 480,
 				"spacing": 160
 			},
 			{
 				"bubbles": [
-					{"color": "yellow", "note": "A1", "correct": false, "scale": 2.0},
-					{"color": "darkyellow", "note": "G#1", "correct": false, "scale": 2.2},
-					{"color": "pink", "note": "G1", "correct": false, "scale": 2.0},
-					{"color": "pearl", "note": "F#1", "correct": false, "scale": 2.1},
-					{"color": "red", "note": "F1", "correct": false, "scale": 2.0},
-					{"color": "lightred", "note": "E1", "correct": true, "scale": 2.1}
+					{"color": "blue", "note": "A1", "correct": false, "scale": 2.0},
+					{"color": "darkyellow", "note": "G#1", "correct": false, "scale": 1.8},
+					{"color": "darkblue", "note": "G1", "correct": false, "scale": 2.2},
+					{"color": "green", "note": "F#1", "correct": false, "scale": 2.1},
+					{"color": "purple", "note": "F1", "correct": false, "scale": 1.5},
+					{"color": "lightred", "note": "E1", "correct": true, "scale": 2.0}
 				],
 				"x_position": 960,
 				"spacing": 160
 			},
 			{
 				"bubbles": [
-					{"color": "yellow", "note": "A1", "correct": false, "scale": 2.0},
-					{"color": "darkyellow", "note": "G#1", "correct": false, "scale": 2.2},
-					{"color": "pink", "note": "G1", "correct": false, "scale": 2.0},
+					{"color": "pink", "note": "A1", "correct": false, "scale": 1.5},
+					{"color": "blue", "note": "G#1", "correct": false, "scale": 2.2},
+					{"color": "darkgreen", "note": "G1", "correct": false, "scale": 2.0},
 					{"color": "pearl", "note": "F#1", "correct": true, "scale": 2.1},
-					{"color": "red", "note": "F1", "correct": false, "scale": 2.0},
+					{"color": "red", "note": "F1", "correct": false, "scale": 1.8},
 					{"color": "lightred", "note": "E1", "correct": false, "scale": 2.1}
 				],
 				"x_position": 1440,
@@ -93,12 +93,12 @@ var level_patterns = {
 		"columns": [
 			{
 				"bubbles": [
-					{"color": "purple", "note": "F1", "correct": false, "scale": 2.0},
-					{"color": "blue", "note": "E1", "correct": true, "scale": 2.2},
-					{"color": "darkgreen", "note": "D#1", "correct": false, "scale": 2.0},
-					{"color": "yellow", "note": "D1", "correct": false, "scale": 2.1},
+					{"color": "darkblue", "note": "F1", "correct": false, "scale": 1.5},
+					{"color": "blue", "note": "E1", "correct": true, "scale": 1.8},
+					{"color": "darkyellow", "note": "D#1", "correct": false, "scale": 2.2},
+					{"color": "pearl", "note": "D1", "correct": false, "scale": 2.1},
 					{"color": "orange", "note": "C#1", "correct": false, "scale": 2.0},
-					{"color": "red", "note": "C1", "correct": false, "scale": 2.1}
+					{"color": "lightred", "note": "C1", "correct": false, "scale": 1.7}
 				],
 				"x_position": 334,
 				"spacing": 160
@@ -106,22 +106,22 @@ var level_patterns = {
 			{
 				"bubbles": [
 					{"color": "purple", "note": "F1", "correct": false, "scale": 2.0},
-					{"color": "blue", "note": "E1", "correct": false, "scale": 2.2},
-					{"color": "darkgreen", "note": "D#1", "correct": false, "scale": 2.0},
+					{"color": "pink", "note": "E1", "correct": false, "scale": 2.2},
+					{"color": "darkgreen", "note": "D#1", "correct": false, "scale": 1.8},
 					{"color": "yellow", "note": "D1", "correct": true, "scale": 2.1},
-					{"color": "orange", "note": "C#1", "correct": false, "scale": 2.0},
-					{"color": "red", "note": "C1", "correct": false, "scale": 2.1}
+					{"color": "red", "note": "C#1", "correct": false, "scale": 2.4},
+					{"color": "green", "note": "C1", "correct": false, "scale": 2.0}
 				],
 				"x_position": 752,
 				"spacing": 160
 			},
 			{
 				"bubbles": [
-					{"color": "purple", "note": "F1", "correct": false, "scale": 2.0},
-					{"color": "blue", "note": "E1", "correct": false, "scale": 2.2},
-					{"color": "darkgreen", "note": "D#1", "correct": false, "scale": 2.0},
-					{"color": "yellow", "note": "D1", "correct": false, "scale": 2.1},
-					{"color": "orange", "note": "C#1", "correct": false, "scale": 2.0},
+					{"color": "darkyellow", "note": "F1", "correct": false, "scale": 1.5},
+					{"color": "darkblue", "note": "E1", "correct": false, "scale": 1.8},
+					{"color": "violet", "note": "D#1", "correct": false, "scale": 2.0},
+					{"color": "blue", "note": "D1", "correct": false, "scale": 2.1},
+					{"color": "pink", "note": "C#1", "correct": false, "scale": 2.4},
 					{"color": "red", "note": "C1", "correct": true, "scale": 2.1}
 				],
 				"x_position": 1170,
@@ -129,12 +129,12 @@ var level_patterns = {
 			},
 			{
 				"bubbles": [
-					{"color": "purple", "note": "F1", "correct": true, "scale": 2.0},
-					{"color": "blue", "note": "E1", "correct": false, "scale": 2.2},
-					{"color": "darkgreen", "note": "D#1", "correct": false, "scale": 2.0},
+					{"color": "purple", "note": "F1", "correct": true, "scale": 2.4},
+					{"color": "pink", "note": "E1", "correct": false, "scale": 1.8},
+					{"color": "pearl", "note": "D#1", "correct": false, "scale": 2.0},
 					{"color": "yellow", "note": "D1", "correct": false, "scale": 2.1},
 					{"color": "orange", "note": "C#1", "correct": false, "scale": 2.0},
-					{"color": "red", "note": "C1", "correct": false, "scale": 2.1}
+					{"color": "blue", "note": "C1", "correct": false, "scale": 2.1}
 				],
 				"x_position": 1588,
 				"spacing": 160

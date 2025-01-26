@@ -1,13 +1,16 @@
-[gd_scene load_steps=9 format=3 uid="uid://fvfqlpc3ptnd"]
+[gd_scene load_steps=12 format=3 uid="uid://fvfqlpc3ptnd"]
 
 [ext_resource type="PackedScene" uid="uid://bdjxiqbu3dlx4" path="res://Assets/Player.tscn" id="1_r7xm3"]
 [ext_resource type="Texture2D" uid="uid://cqrti61thn412" path="res://Assets/Images/Background.png" id="2_bg_img"]
 [ext_resource type="AudioStream" uid="uid://yic3y65beqcw" path="res://Assets/Sounds/Hintergrundmusik.mp3" id="3_bx6iq"]
+[ext_resource type="Script" path="res://Scripts/BackgroundScaler.gd" id="3_jbfpt"]
 [ext_resource type="Texture2D" uid="uid://mplo83ptugb6" path="res://Assets/Images/Foreground.png" id="4_74cct"]
 [ext_resource type="Script" path="res://Scripts/BubbleManager.gd" id="4_xm3pq"]
 [ext_resource type="Script" path="res://Scripts/LevelManager.gd" id="5_new_script"]
 [ext_resource type="Script" path="res://Scripts/TransitionEffect.gd" id="6_trans_fx"]
 [ext_resource type="Script" path="res://Scripts/InputManager.gd" id="7_input_manager"]
+[ext_resource type="AudioStream" uid="uid://cwfiwf7m6tmq6" path="res://Assets/Sounds/NXTLEVEL1_TETRIS.mp3" id="10_t0ris"]
+[ext_resource type="AudioStream" uid="uid://ixph0ccmxm65" path="res://Assets/Sounds/NXTLEVEL2_SCHUMMAN.mp3" id="11_cgqnj"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -21,12 +24,18 @@ layer = -1
 position = Vector2(960, 540)
 texture = ExtResource("2_bg_img")
 
+[node name="BackgroundScaler" type="Node" parent="BackgroundLayer/Background"]
+script = ExtResource("3_jbfpt")
+
 [node name="ForegroundLayer" type="CanvasLayer" parent="."]
 layer = 2
 
 [node name="Foreground" type="Sprite2D" parent="ForegroundLayer"]
 position = Vector2(960, 540)
 texture = ExtResource("4_74cct")
+
+[node name="BackgroundScaler" type="Node" parent="ForegroundLayer/Foreground"]
+script = ExtResource("3_jbfpt")
 
 [node name="UILayer" type="CanvasLayer" parent="."]
 layer = 3
@@ -63,3 +72,9 @@ script = ExtResource("6_trans_fx")
 
 [node name="InputManager" type="Node" parent="."]
 script = ExtResource("7_input_manager")
+
+[node name="Melody_Lvl1" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_t0ris")
+
+[node name="Melody_Lvl2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_cgqnj")

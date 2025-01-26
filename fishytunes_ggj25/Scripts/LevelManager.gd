@@ -6,6 +6,8 @@ var current_level = "level_1"
 var max_level = 2  # Update this when adding more levels
 var screen_width = 1920  # Screen width in pixels
 var is_transitioning = false
+@onready var Melody_Lvl1 = $"../Melody_Lvl1"
+@onready var Melody_Lvl2 = $"../Melody_Lvl2"
 
 @onready var bubble_manager = $"../BubbleLayer/BubbleManager"
 @onready var transition = $"../TransitionEffect"
@@ -36,10 +38,15 @@ func load_current_level():
 	bubble_manager.load_level(current_level)
 	await transition.fade_out()
 	is_transitioning = false
+	bubble_manager.highlight_correct_bubbles()
 
 func _on_level_completed():
-	is_transitioning = true
 	var level_number = int(current_level.split("_")[1])
+	if(level_number == 1):
+		Melody_Lvl1.play()
+	elif(level_number == 2):
+		Melody_Lvl2.play()
+	is_transitioning = true
 	if level_number == max_level:
 		emit_signal("game_won")
 		_on_game_won()

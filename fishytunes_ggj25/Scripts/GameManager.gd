@@ -1,4 +1,4 @@
-extends Node
+extends Node2D
 
 var GAME_OVER_SCENE = preload("res://Scenes/GameOverScene.tscn")
 var GAME_WON_SCENE = preload("res://Scenes/GameWonScene.tscn")
