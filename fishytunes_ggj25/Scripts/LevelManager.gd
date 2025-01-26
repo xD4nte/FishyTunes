@@ -48,4 +48,8 @@ func _on_level_completed():
 		load_current_level()
 
 func _on_game_won():
+	if is_instance_valid(bubble_manager):
+		bubble_manager.queue_free()
+	if is_instance_valid(player):
+		player.queue_free()
 	GameManager.game_won()
