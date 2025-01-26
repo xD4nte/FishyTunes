@@ -1,12 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://fvfqlpc3ptnd"]
+[gd_scene load_steps=9 format=3 uid="uid://fvfqlpc3ptnd"]
 
 [ext_resource type="PackedScene" uid="uid://bdjxiqbu3dlx4" path="res://Assets/Player.tscn" id="1_r7xm3"]
-[ext_resource type="Texture2D" uid="uid://cqrti61thn412" path="res://Assets/Images/Background.png" id="2_wrrf7"]
+[ext_resource type="Texture2D" uid="uid://cqrti61thn412" path="res://Assets/Images/Background.png" id="2_bg_img"]
 [ext_resource type="AudioStream" uid="uid://yic3y65beqcw" path="res://Assets/Sounds/Hintergrundmusik.mp3" id="3_bx6iq"]
 [ext_resource type="Script" path="res://Scripts/BubbleManager.gd" id="4_xm3pq"]
 [ext_resource type="Script" path="res://Scripts/LevelManager.gd" id="5_new_script"]
 [ext_resource type="Script" path="res://Scripts/TransitionEffect.gd" id="6_trans_fx"]
 [ext_resource type="Script" path="res://Scripts/InputManager.gd" id="7_input_manager"]
+[ext_resource type="Script" path="res://Scripts/BackgroundScaler.gd" id="8_bg_scale"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -16,10 +17,12 @@ script = ExtResource("5_new_script")
 [node name="BackgroundLayer" type="CanvasLayer" parent="."]
 layer = -1
 
-[node name="Sprite2D" type="Sprite2D" parent="BackgroundLayer"]
-position = Vector2(1756.2, 530.75)
-scale = Vector2(0.690313, 0.690313)
-texture = ExtResource("2_wrrf7")
+[node name="Background" type="Sprite2D" parent="BackgroundLayer"]
+position = Vector2(960, 540)
+texture = ExtResource("2_bg_img")
+
+[node name="Scaler" type="Node" parent="BackgroundLayer/Background"]
+script = ExtResource("8_bg_scale")
 
 [node name="BubbleLayer" type="CanvasLayer" parent="."]
 layer = 0
