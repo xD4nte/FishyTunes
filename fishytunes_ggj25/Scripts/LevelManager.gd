@@ -18,6 +18,7 @@ func _ready():
 
 func start_game():
 	current_level = "level_1"
+	GameManager.welcome()
 	load_current_level()
 
 func _process(_delta):
@@ -47,4 +48,4 @@ func _on_level_completed():
 		load_current_level()
 
 func _on_game_won():
-	GameManager.game_won() 
+	GameManager.game_won()

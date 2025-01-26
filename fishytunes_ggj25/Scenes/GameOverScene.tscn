@@ -1,6 +1,5 @@
-[gd_scene load_steps=6 format=3 uid="uid://dff11raxvey18"]
+[gd_scene load_steps=5 format=3 uid="uid://dff11raxvey18"]
 
-[ext_resource type="Script" path="res://Scenes/GameOverScript.gd" id="1_uv1be"]
 [ext_resource type="AudioStream" uid="uid://cijekv36blsva" path="res://Assets/Sounds/Titlemusik.mp3" id="2_chiq1"]
 
 [sub_resource type="FontVariation" id="FontVariation_jkfn4"]
@@ -20,7 +19,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_uv1be")
 
 [node name="TitleMusic" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_chiq1")

@@ -77,9 +77,9 @@ var level_patterns = {
 				"bubbles": [
 					{"color": "blue", "note": "trash", "correct": false, "scale": 2.0},
 					{"color": "green", "note": "trash", "correct": false, "scale": 2.3},
-					{"color": "pink", "note": "trash", "correct": false, "scale": 2.2},
+					{"color": "blue", "note": "F1", "correct": false, "scale": 2.2},
 					{"color": "yellow", "note": "trash", "correct": false, "scale": 2.1},
-					{"color": "blue", "note": "trash", "correct": true, "scale": 2.0}
+					{"color": "red", "note": "F1", "correct": true, "scale": 2.0}
 				],
 				"x_position": 1086,
 				"spacing": 200

@@ -2,6 +2,7 @@ extends Node
 
 const GAME_OVER_SCENE = preload("res://Scenes/GameOverScene.tscn")
 const GAME_WON_SCENE = preload("res://Scenes/GameWonScene.tscn")
+const WELCOME_SCENE = preload("res://Scenes/WelcomeScene.tscn")
 
 func game_over():
 	var scene = GAME_OVER_SCENE.instantiate()
@@ -12,4 +13,8 @@ func reset_game():
 
 func game_won():
 	var scene = GAME_WON_SCENE.instantiate()
+	add_child(scene)
+
+func welcome():
+	var scene = WELCOME_SCENE.instantiate()
 	add_child(scene)
