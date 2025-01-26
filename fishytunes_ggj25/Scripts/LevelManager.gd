@@ -8,7 +8,6 @@ var screen_width = 1920  # Screen width in pixels
 var is_transitioning = false
 @onready var Melody_Lvl1 = $"../Melody_Lvl1"
 @onready var Melody_Lvl2 = $"../Melody_Lvl2"
-@onready var Melody_Lvl3 = $"../Melody_Lvl3"
 
 @onready var bubble_manager = $"../BubbleLayer/BubbleManager"
 @onready var transition = $"../TransitionEffect"
@@ -48,7 +47,7 @@ func _on_level_completed():
 	elif(level_number == 2):
 		Melody_Lvl2.play()
 	is_transitioning = true
-	if level_number == max_level:
+	if level_number == 2:
 		emit_signal("game_won")
 		_on_game_won()
 	else:
