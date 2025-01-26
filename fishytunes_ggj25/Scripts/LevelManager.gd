@@ -8,6 +8,7 @@ var screen_width = 1920  # Screen width in pixels
 var is_transitioning = false
 @onready var Melody_Lvl1 = $"../Melody_Lvl1"
 @onready var Melody_Lvl2 = $"../Melody_Lvl2"
+@onready var Melody_Lvl3 = $"../Melody_Lvl3"
 
 @onready var bubble_manager = $"../BubbleLayer/BubbleManager"
 @onready var transition = $"../TransitionEffect"

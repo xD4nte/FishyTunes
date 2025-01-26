@@ -140,7 +140,7 @@ var level_patterns = {
 				"spacing": 160
 			}
 		]
-	}
+	},
 }
 
 var active_bubbles = {}
@@ -148,6 +148,9 @@ var time_passed = 0.0
 var hover_amplitude = 0.2
 var hover_speed = 1.0
 var current_level = "level_1"
+
+var average_offset = 75  # Adjust this value as needed
+var offset_variance = 50  # Adjust this value as needed
 
 func _ready():
 	load_level(current_level)
@@ -187,7 +190,7 @@ func load_level(level_key: String):
 			var bubble_data = column["bubbles"][i]
 			var bubble = bubble_scene.instantiate()
 			var pos = Vector2(
-				column["x_position"],
+				column["x_position"] + randf_range(-offset_variance, offset_variance),
 				119 + (i * column["spacing"])
 			)
 			bubble.position = pos
