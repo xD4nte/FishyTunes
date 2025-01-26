@@ -53,36 +53,39 @@ var level_patterns = {
 		"columns": [
 			{
 				"bubbles": [
-					{"color": "pink", "note": "trash", "correct": false, "scale": 2.2},
-					{"color": "blue", "note": "trash", "correct": false, "scale": 2.0},
-					{"color": "green", "note": "trash", "correct": false, "scale": 2.3},
 					{"color": "yellow", "note": "A1", "correct": true, "scale": 2.1},
-					{"color": "pink", "note": "trash", "correct": false, "scale": 2.2}
+					{"color": "darkyellow", "note": "G#1", "correct": false, "scale": 2.0},
+					{"color": "pink", "note": "G1", "correct": false, "scale": 2.2},
+					{"color": "pearl", "note": "F#1", "correct": false, "scale": 2.0},
+					{"color": "red", "note": "F1", "correct": false, "scale": 2.1},
+					{"color": "lightred", "note": "E1", "correct": false, "scale": 2.0}
 				],
-				"x_position": 334,
-				"spacing": 200
+				"x_position": 480,
+				"spacing": 160
 			},
 			{
 				"bubbles": [
-					{"color": "darkblue", "note": "trash", "correct": false, "scale": 2.0},
-					{"color": "darkgreen", "note": "trash", "correct": false, "scale": 2.3},
-					{"color": "lightred", "note": "E1", "correct": true, "scale": 2.2},
-					{"color": "darkyellow", "note": "trash", "correct": false, "scale": 2.1},
-					{"color": "purple", "note": "trash", "correct": false, "scale": 2.0}
+					{"color": "yellow", "note": "A1", "correct": false, "scale": 2.0},
+					{"color": "darkyellow", "note": "G#1", "correct": false, "scale": 2.2},
+					{"color": "pink", "note": "G1", "correct": false, "scale": 2.0},
+					{"color": "pearl", "note": "F#1", "correct": false, "scale": 2.1},
+					{"color": "red", "note": "F1", "correct": false, "scale": 2.0},
+					{"color": "lightred", "note": "E1", "correct": true, "scale": 2.1}
 				],
-				"x_position": 752,
-				"spacing": 200
-			}, 
+				"x_position": 960,
+				"spacing": 160
+			},
 			{
 				"bubbles": [
-					{"color": "blue", "note": "trash", "correct": false, "scale": 2.0},
-					{"color": "green", "note": "trash", "correct": false, "scale": 2.3},
-					{"color": "blue", "note": "F1", "correct": false, "scale": 2.2},
-					{"color": "yellow", "note": "trash", "correct": false, "scale": 2.1},
-					{"color": "red", "note": "F1", "correct": true, "scale": 2.0}
+					{"color": "yellow", "note": "A1", "correct": false, "scale": 2.0},
+					{"color": "darkyellow", "note": "G#1", "correct": false, "scale": 2.2},
+					{"color": "pink", "note": "G1", "correct": false, "scale": 2.0},
+					{"color": "pearl", "note": "F#1", "correct": true, "scale": 2.1},
+					{"color": "red", "note": "F1", "correct": false, "scale": 2.0},
+					{"color": "lightred", "note": "E1", "correct": false, "scale": 2.1}
 				],
-				"x_position": 1086,
-				"spacing": 200
+				"x_position": 1440,
+				"spacing": 160
 			}
 		]
 	},
@@ -90,53 +93,51 @@ var level_patterns = {
 		"columns": [
 			{
 				"bubbles": [
-					{"color": "yellow", "note": "trash", "correct": false, "scale": 2.0},
-					{"color": "green", "note": "trash", "correct": true, "scale": 2.3},
-					{"color": "blue", "note": "trash", "correct": false, "scale": 2.0},
-					{"color": "pink", "note": "trash", "correct": false, "scale": 2.2}
+					{"color": "purple", "note": "F1", "correct": false, "scale": 2.0},
+					{"color": "blue", "note": "E1", "correct": true, "scale": 2.2},
+					{"color": "darkgreen", "note": "D#1", "correct": false, "scale": 2.0},
+					{"color": "yellow", "note": "D1", "correct": false, "scale": 2.1},
+					{"color": "orange", "note": "C#1", "correct": false, "scale": 2.0},
+					{"color": "red", "note": "C1", "correct": false, "scale": 2.1}
 				],
 				"x_position": 334,
-				"spacing": 250
+				"spacing": 160
 			},
 			{
 				"bubbles": [
-					{"color": "pink", "note": "trash", "correct": false, "scale": 2.2},
-					{"color": "yellow", "note": "trash", "correct": true, "scale": 2.0},
-					{"color": "green", "note": "trash", "correct": false, "scale": 2.3},
-					{"color": "blue", "note": "trash", "correct": false, "scale": 2.0}
+					{"color": "purple", "note": "F1", "correct": false, "scale": 2.0},
+					{"color": "blue", "note": "E1", "correct": false, "scale": 2.2},
+					{"color": "darkgreen", "note": "D#1", "correct": false, "scale": 2.0},
+					{"color": "yellow", "note": "D1", "correct": true, "scale": 2.1},
+					{"color": "orange", "note": "C#1", "correct": false, "scale": 2.0},
+					{"color": "red", "note": "C1", "correct": false, "scale": 2.1}
 				],
-				"x_position": 652,
-				"spacing": 250
+				"x_position": 752,
+				"spacing": 160
 			},
 			{
 				"bubbles": [
-					{"color": "blue", "note": "trash", "correct": false, "scale": 2.0},
-					{"color": "pink", "note": "trash", "correct": false, "scale": 2.2},
-					{"color": "yellow", "note": "trash", "correct": true, "scale": 2.0},
-					{"color": "green", "note": "trash", "correct": false, "scale": 2.3}
+					{"color": "purple", "note": "F1", "correct": false, "scale": 2.0},
+					{"color": "blue", "note": "E1", "correct": false, "scale": 2.2},
+					{"color": "darkgreen", "note": "D#1", "correct": false, "scale": 2.0},
+					{"color": "yellow", "note": "D1", "correct": false, "scale": 2.1},
+					{"color": "orange", "note": "C#1", "correct": false, "scale": 2.0},
+					{"color": "red", "note": "C1", "correct": true, "scale": 2.1}
 				],
-				"x_position": 970,
-				"spacing": 250
+				"x_position": 1170,
+				"spacing": 160
 			},
 			{
 				"bubbles": [
-					{"color": "green", "note": "trash", "correct": false, "scale": 2.3},
-					{"color": "blue", "note": "trash", "correct": false, "scale": 2.0},
-					{"color": "pink", "note": "trash", "correct": true, "scale": 2.2},
-					{"color": "yellow", "note": "trash", "correct": false, "scale": 2.0}
+					{"color": "purple", "note": "F1", "correct": true, "scale": 2.0},
+					{"color": "blue", "note": "E1", "correct": false, "scale": 2.2},
+					{"color": "darkgreen", "note": "D#1", "correct": false, "scale": 2.0},
+					{"color": "yellow", "note": "D1", "correct": false, "scale": 2.1},
+					{"color": "orange", "note": "C#1", "correct": false, "scale": 2.0},
+					{"color": "red", "note": "C1", "correct": false, "scale": 2.1}
 				],
-				"x_position": 1288,
-				"spacing": 250
-			},
-			{
-				"bubbles": [
-					{"color": "yellow", "note": "trash", "correct": false, "scale": 2.0},
-					{"color": "green", "note": "trash", "correct": true, "scale": 2.3},
-					{"color": "blue", "note": "trash", "correct": false, "scale": 2.0},
-					{"color": "pink", "note": "trash", "correct": false, "scale": 2.2}
-				],
-				"x_position": 1606,
-				"spacing": 250
+				"x_position": 1588,
+				"spacing": 160
 			}
 		]
 	}
@@ -159,9 +160,24 @@ func _process(delta):
 		highlight_correct_bubbles()
 
 func load_level(level_key: String):
+	# Force cleanup of any remaining tweens
+	var tweens = get_tree().get_nodes_in_group("tweens")
+	for tween in tweens:
+		if tween.is_valid():
+			tween.kill()
+	
+	# Ensure proper cleanup of bubbles
 	for bubble in active_bubbles.values():
-		bubble.queue_free()
+		if is_instance_valid(bubble):
+			if bubble.is_connected("bubble_completed", _on_bubble_completed):
+				bubble.disconnect("bubble_completed", _on_bubble_completed)
+			remove_child(bubble)
+			bubble.queue_free()
 	active_bubbles.clear()
+	
+	# Reset state
+	time_passed = 0.0
+	current_level = level_key
 	
 	var pattern = level_patterns[level_key]
 	var bubble_id = 0
@@ -182,7 +198,6 @@ func load_level(level_key: String):
 			set_bubble_color(bubble, bubble_data["color"])
 			set_bubble_note(bubble, bubble_data["note"])
 			
-			# Connect to bubble's completion signal
 			bubble.connect("bubble_completed", _on_bubble_completed)
 			
 			active_bubbles[bubble.name] = bubble
@@ -206,14 +221,32 @@ func hover_bubbles():
 		bubble.position.y = original_pos.y + offset
 
 func highlight_correct_bubbles():
+	var correct_bubbles = []
 	for bubble_id in active_bubbles:
 		var bubble = active_bubbles[bubble_id]
-		if bubble.correct:
+		if is_instance_valid(bubble) and bubble.correct and bubble.visible:
+			correct_bubbles.append(bubble)
+	
+	# Sort bubbles by x position to play from left to right
+	correct_bubbles.sort_custom(func(a, b): return a.position.x < b.position.x)
+	
+	for i in range(len(correct_bubbles)):
+		var bubble = correct_bubbles[i]
+		if is_instance_valid(bubble):  # Additional safety check
 			var tween = create_tween()
-			tween.tween_property(bubble, "scale", bubble.scale * 1.2, 0.3)
-			tween.tween_property(bubble, "scale", bubble.scale, 0.3)
+			if tween:  # Check if tween creation succeeded
+				tween.tween_callback(func():
+					if is_instance_valid(bubble) and bubble.visible:
+						bubble.note.play()
+						var scale_tween = create_tween()
+						if scale_tween:  # Check if scale tween creation succeeded
+							scale_tween.tween_property(bubble, "scale", bubble.scale * 1.2, 0.2)
+							scale_tween.tween_property(bubble, "scale", bubble.scale, 0.2)
+				).set_delay(i * 0.5)
 
 func _on_bubble_completed(bubble):
-	if bubble.correct:
-		bubble.note.play()
-		bubble.hide()
+	if is_instance_valid(bubble):
+		if bubble.correct:
+			bubble.note.play()
+			bubble.hide()
+		active_bubbles.erase(bubble.name)

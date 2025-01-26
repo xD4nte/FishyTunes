@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://fvfqlpc3ptnd"]
+[gd_scene load_steps=9 format=3 uid="uid://fvfqlpc3ptnd"]
 
 [ext_resource type="PackedScene" uid="uid://bdjxiqbu3dlx4" path="res://Assets/Player.tscn" id="1_r7xm3"]
 [ext_resource type="Texture2D" uid="uid://cqrti61thn412" path="res://Assets/Images/Background.png" id="2_bg_img"]
@@ -8,7 +8,6 @@
 [ext_resource type="Script" path="res://Scripts/LevelManager.gd" id="5_new_script"]
 [ext_resource type="Script" path="res://Scripts/TransitionEffect.gd" id="6_trans_fx"]
 [ext_resource type="Script" path="res://Scripts/InputManager.gd" id="7_input_manager"]
-[ext_resource type="Script" path="res://Scripts/BackgroundScaler.gd" id="8_bg_scale"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -22,8 +21,15 @@ layer = -1
 position = Vector2(960, 540)
 texture = ExtResource("2_bg_img")
 
-[node name="Scaler" type="Node" parent="BackgroundLayer/Background"]
-script = ExtResource("8_bg_scale")
+[node name="ForegroundLayer" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="Foreground" type="Sprite2D" parent="ForegroundLayer"]
+position = Vector2(960, 540)
+texture = ExtResource("4_74cct")
+
+[node name="UILayer" type="CanvasLayer" parent="."]
+layer = 3
 
 [node name="BubbleLayer" type="CanvasLayer" parent="."]
 layer = 0
@@ -57,11 +63,3 @@ script = ExtResource("6_trans_fx")
 
 [node name="InputManager" type="Node" parent="."]
 script = ExtResource("7_input_manager")
-
-[node name="Foreground" type="Sprite2D" parent="."]
-z_index = 400
-position = Vector2(960, 540)
-texture = ExtResource("4_74cct")
-
-[node name="Scaler" type="Node" parent="Foreground"]
-script = ExtResource("8_bg_scale")
